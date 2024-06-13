@@ -1,0 +1,140 @@
+/* xs to sm */
+@media screen and (min-width: 321px) {
+  #restaurant .menus {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  footer .nav__item {
+    width: fit-content;
+  }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+  .nav__list {
+    gap: .5rem;
+  }
+
+  .nav__item {
+    width: fit-content;
+  }
+
+  #restaurants {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #restaurant {
+    .card {
+      margin: -4rem 4rem 0;
+    }
+  }
+
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .headline__content {
+    padding: 16px 32px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #drawer.nav {
+    display: none;
+    right: 0;
+    width: 320px;
+  }
+
+  .tablet.nav {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #restaurants {
+    .placeholder {
+      grid-column: span 2 / span 2;
+    }
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1024px) {
+  #restaurants {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    .placeholder {
+      grid-column: span 3 / span 3;
+    }
+  }
+
+  #restaurant {
+    .card {
+      margin: -4rem auto 0;
+    }
+  }
+
+  .header {
+    min-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .hero__image,
+  .hero-detail img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #restaurants {
+    padding: 1rem;
+  }
+}
+
+/* Tampilkanlah minimal width 1000px pada  viewport width >= 1200px. */
+@media screen and (min-width: 1200px) {
+
+  .header,
+  #main-content .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    min-width: 1000px;
+  }
+
+  .hero__image {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .hero-detail {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+
+  .header {
+    padding: 0;
+  }
+}
